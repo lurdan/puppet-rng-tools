@@ -48,6 +48,8 @@ class rng-tools (
       true => running,
       default => stopped,
     },
+    hasstatus => false,
+    pattern => '/rngd',
     enable => $active,
     require => Package['rng-tools'],
   }
